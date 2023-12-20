@@ -31,7 +31,7 @@ const todoList = () => {
       .map(
         (item) =>
           `${item.completed ? "[x]" : "[ ]"} ${item.title} ${
-            item.due === new Date().toISOString().slice(0, 10)
+            item.dueDate === new Date().toISOString().slice(0, 10)
               ? ""
               : item.dueDate
           }`
